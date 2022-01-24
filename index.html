@@ -5,141 +5,241 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ice Cream</title>
+    <!-- CSS BOOSTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--FONT AWESOME  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Fonts Oswald -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <!-- Custom css -->
     <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
-    <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-    </div>
+
+    
+         <!-- Menu con BOOSTSRAP -->
     <div class="container">
-        <nav class="nav-main">
-             <img src="Logo de helado.jpeg" alt="Ice Cream LOGO" class="nav-brand">
-             <ul class="nav-menu">
-                 <li>
-                     <a href="#">Menu</a>
-                 </li>
-                 <li>
-                    <a href="#">Servicio a Domicilio</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-                <li>
-                    <a href="#">Empresa</a>
-                </li>
-
-             </ul>
-             <ul class="nav-menu-right">
-                <li>
-                    <a href="#">
-                       <i class="fas fa-search"></i>
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+            <div class="container-fluid">
+                <nav class="nav-main">
+                    <img src="Logo de helado.jpeg" alt="Ice Cream LOGO" class="nav-brand">
+             </nav>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"; style="color: black;" >
+                      Menu
                     </a>
-                </li>
-             </ul>
-         </nav>
-         <hr color="white" size="8">
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Especiales</a></li>
+                      <li><a class="dropdown-item" href="#">Varquillas</a></li>
+                      <li><a class="dropdown-item" href="#">Helado Tradicional</a></li>
+                      <li><a class="dropdown-item" href="#">Desayuno Del Dia</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Nosotros</a></li>
+                    </ul>
+                    
+                </ul>
+                
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+         
 
 
-         <!-- Showcase -->
-         <header class="Showcase">
-             <h2>La nueva Sensacion</h2>
+         <!-- Showcase Con BOOSTSTRAP -->
+         <div class="card bg-dark text-white">
+            <img src="./Portada.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h2>La nueva Sensacion</h2>
              <p>Varquilla Gorda repleta de heldao del sabor que quieras, Pruebala ya</p>
-             <a href="#" class="btn">Saber mas <i class="fas fa-angle-double-right"></i> </a>
+             <button class="btn btn-outline-success" type="submit">Learn More</button>
+            </div>
+          </div>
 
          </header>
 
-         <!-- News Cards -->
+         <!-- News Cards Con BOOSTSTRAP -->
 
-         <div class="News-Cards">
-            <div>
-                <img src="Helado 2.png" alt="Helado">
-                <h3>Varquillas de Vainilla</h3>
-                <p>Varquillas de vainilla rellenes de chispas de chocolate con conos rellenos de dulce de leche</p>
-                <a href="#">Comprar ahora <i class="fas fa-angle-double-right"></i></a>
-             </div>
-             <div>
-                <img src="Helado 4.png" alt="Helado">
-                <h3>Varquillas</h3>
-                <p>Varquillas de diferentes sabores: vainilla, fresa, chocolate</p>
-                <a href="#">Comprar ahora <i class="fas fa-angle-double-right"></i></a>
-             </div>
-             <div>
-                <img src="Fruta.png" alt="Helado">
-                <h3>Paletas de fruta</h3>
-                <p>Paletas de sandia con kiwi, Pruebalas no te vas arrepentir</p>
-                <a href="#">Comprar ahora <i class="fas fa-angle-double-right"></i></a>
-             </div>
-             <div>
-                <img src="chocolate.png" alt="Helado">
-                <h3>Paleta de chocolate</h3>
-                <p>Paleta de chocolate rellena de nutella y mani</p>
-                <a href="#">Comprar ahora <i class="fas fa-angle-double-right"></i></a>
-             </div>
-    
-         </div>
-         
-          <!--Baner numero uno  -->
+         <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100" style="background-color: palevioletred;">
+                <img src="./kk.png " class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Varquillas</h5>
+                  <p class="card-text">Ths is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <button class="btn btn-outline-success" type="submit">Learn More</button>
+                </div>
 
-         <section class="Baner-numero-uno">
-             <div class="contenido">
-                 <h2>Sandwich Helado</h2>
-                 <p>Sandwich de galleta de chocolate oscuro con helado de chocolate</p>
-                 <a href="#" class="btn">Saber mas <i class="fas fa-angle-double-right"></i> </a>
-                 
-             </div>
-
-         </section>
-
-
-          <!-- News Cards -->
-
-          <div class="News-Cards">
-            <div>
-                <img src="Malteada.png" alt="Helado">
-                <h3>Malteada</h3>
-                <p>Malteada de oreo y leche condensada</p>
-                <a href="#">Comprar ahora <i class="fas fa-angle-double-right"></i></a>
-             </div>
-             <div>
-                <img src="Chicle.png" alt="Helado">
-                <h3>Helado tripe sabor</h3>
-                <p>Envases llenos de helado de chicle, vainlla y fresa</p>
-                <a href="#">Comprar ahora <i class="fas fa-angle-double-right"></i></a>
-             </div>
-             <div>
-                <img src="Chocolate 2.png" alt="Helado">
-                <h3>Helado de chocolate</h3>
-                <p>Helado de chocolate con oreo</p>
-                <a href="#">Comprar ahora <i class="fas fa-angle-double-right"></i></a>
-             </div>
-             <div>
-                <img src="Varquillitas.png" alt="Helado">
-                <h3>Varquillas con frutas</h3>
-                <p>Varquillas llenas de helado de frutas con frutas</p>
-                <a href="#">Comprar ahora <i class="fas fa-angle-double-right"></i></a>
-             </div>
-    
-         </div>
-
-
-         <!--Baner numero dos  -->
-
-         <section class="Baner-numero-dos">
-            <div class="contenido">
-                <h2>Desayuno Helado</h2>
-                <p>Helado en forma de wuafles con helado de leche y frutas</p>
-                <a href="#" class="btn">Saber mas <i class="fas fa-angle-double-right"></i> </a>
-                
+              </div>
             </div>
+            <div class="col">
+              <div class="card h-100" style="background-color: palevioletred;">
+                <img src="./kk2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <button class="btn btn-outline-success" type="submit">Learn More</button>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100" style="background-color: palevioletred;">
+                <img src="./kk3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <button class="btn btn-outline-success" type="submit">Learn More</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
 
-        </section>
+          
+         
+          <!--CAROUSEL BOOSTSRAP -->
+
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./Pruebaa.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>F</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                  <button class="btn btn-outline-success" type="submit">Learn More</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Galletita.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                  <button class="btn btn-outline-success" type="submit">Learn More</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./Especial.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                  <button class="btn btn-outline-success" type="submit">Learn More</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+         
+
+
+          <!-- New Card Con BOOSTSTRAP 2 -->
+
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100" style="background-color: palevioletred;">
+                <img src="./Tradicional1.png " class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Varquillas</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <button class="btn btn-outline-success" type="submit">Learn More</button>
+                </div>
+
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100" style="background-color: palevioletred;">
+                <img src="./Tradicional2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <button class="btn btn-outline-success" type="submit">Learn More</button>
+                </div>
+                
+              </div>  
+            </div>
+            <div class="col">
+              <div class="card h-100" style="background-color: palevioletred;">
+                <img src="./Tradicional3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <button class="btn btn-outline-success" type="submit">Learn More</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+
+         <!--Carousel Con Booststrap 2-->
+
+         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="Desayuno3.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+                <button class="btn btn-outline-success" type="submit">Learn More</button>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="Desayuno2.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+                <button class="btn btn-outline-success" type="submit">Learn More</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Desayuno1.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+                <button class="btn btn-outline-success" type="submit">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+        <!-- Social -->
 
         <section class="social">
           <p>Follow Ice Cream</p>
@@ -167,6 +267,10 @@
 <!-- Custom java -->
 
 <script src="main.js"></script>
+
+<!-- JS BOOSTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     
 
 </body>
