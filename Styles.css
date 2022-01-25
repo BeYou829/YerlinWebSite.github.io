@@ -291,6 +291,7 @@ hr{
 .nav-logo{
     width: 92px;
     border-radius: 50%;
+    margin-right: 50px;
 }
 
 .footer-links{
@@ -308,9 +309,8 @@ hr{
 }
 
 .footer-links{
-
-    margin: 20px 0 0 ;
-  
-  
-    
+    margin: 20px 0 0 ;   
+}
+.iconos{
+    margin: auto;
 }
