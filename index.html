@@ -15,6 +15,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">ç
 <!-- Icons boostraps -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+<!-- Libreria de animaciones -->
+<script src="https://unpkg.com/scrollreveal"></script>
     <!-- Custom css -->
     <link rel="stylesheet" href="Styles.css">
 </head>
@@ -38,12 +40,12 @@
                       Menu
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Especiales</a></li>
-                      <li><a class="dropdown-item" href="#">Varquillas</a></li>
-                      <li><a class="dropdown-item" href="#">Helado Tradicional</a></li>
-                      <li><a class="dropdown-item" href="#">Desayuno Del Dia</a></li>
+                      <li><a class="dropdown-item" href="#carouselExampleCaptions">Especiales</a></li>
+                      <li><a class="dropdown-item" href="#Varquillas">Varquillas</a></li>
+                      <li><a class="dropdown-item" href="#heladotradicional">Helado Tradicional</a></li>
+                      <li><a class="dropdown-item" href="#carouselExampleDark">Desayuno Del Dia</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Nosotros</a></li>
+                      <li><a class="dropdown-item" href="#pie">Nosotros</a></li>
                     </ul>
                     
                 </ul>
@@ -72,7 +74,9 @@
 
          <!-- News Cards Con BOOSTSTRAP -->
 
-         <div class="row row-cols-1 row-cols-md-3 g-4">
+         <div id="Varquillas">
+
+          <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100" style="background-color: palevioletred;">
                 <img src="./kk.png " class="card-img-top" alt="...">
@@ -108,8 +112,9 @@
             </div>
           </div>
 
-          
-         
+         </div>
+
+
           <!--CAROUSEL BOOSTSRAP -->
 
           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -159,41 +164,45 @@
 
           <!-- New Card Con BOOSTSTRAP 2 -->
 
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card h-100" style="background-color: palevioletred;">
-                <img src="./Tradicional1.png " class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Varquillas</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <button class="btn btn-outline-success" type="submit">Learn More</button>
+          <div id="heladotradicional">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100" style="background-color: palevioletred;">
+                  <img src="./Tradicional1.png " class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Varquillas</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <button class="btn btn-outline-success" type="submit">Learn More</button>
+                  </div>
+  
                 </div>
+              </div>
+              <div class="col">
+                <div class="card h-100" style="background-color: palevioletred;">
+                  <img src="./Tradicional2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <button class="btn btn-outline-success" type="submit">Learn More</button>
+                  </div>
+                  
+                </div>  
+              </div>
+              <div class="col">
+                <div class="card h-100" style="background-color: palevioletred;">
+                  <img src="./Tradicional3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <button class="btn btn-outline-success" type="submit">Learn More</button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
 
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100" style="background-color: palevioletred;">
-                <img src="./Tradicional2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                  <button class="btn btn-outline-success" type="submit">Learn More</button>
-                </div>
-                
-              </div>  
-            </div>
-            <div class="col">
-              <div class="card h-100" style="background-color: palevioletred;">
-                <img src="./Tradicional3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                  <button class="btn btn-outline-success" type="submit">Learn More</button>
-                </div>
-                
-              </div>
-            </div>
           </div>
+          
 
 
          <!--Carousel Con Booststrap 2-->
@@ -244,45 +253,47 @@
      
         </section>  
         
-        <!-- Pie de Pagina -->
     </div>
-    
-    <div class="footer-links">
 
-      <div class="footer-container">
+      <!-- Pie de Pagina -->
+    <div id="pie">
+      <div class="footer-links">
 
-        <img src="Logo de helado.jpeg" alt="Logo de helado" class="nav-logo">
-
-        <div class="nav-hdl">
-
-          <h3>Nuestra empresa es una empresa <br> dedicada hacer vaina raras</h3>
-
+        <div class="footer-container">
+  
+          <img src="Logo de helado.jpeg" alt="Logo de helado" class="nav-logo">
+  
+          <div class="nav-hdl">
+  
+            <h3>Nuestra empresa es una empresa <br> dedicada hacer vaina raras</h3>
+  
+          </div>
+          <div class="iconos">
+           <a href="#"><i class="bi bi-telephone-outbound"></i></a>
+           <h1 style="font-size: 20px;">903-323-2323</h1>
+  
+          </div>
+  
+  
         </div>
-        <div class="iconos">
-         <a href="#"><i class="bi bi-telephone-outbound"></i></a>
-         <h1 style="font-size: 20px;">903-323-2323</h1>
-
-        </div>
-
-
+  
+        <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+          <p class="fs-5 px-3  pt-3">ICE CREAM. &copy; Todos Los Derechos Reservados 2021</p>
+          <div id="iconos" >
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>  
+          </div>
+        </footer>
       </div>
 
-      <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
-        <p class="fs-5 px-3  pt-3">ICE CREAM. &copy; Todos Los Derechos Reservados 2021</p>
-        <div id="iconos" >
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>  
-        </div>
-      </footer>
     </div>
+    
 
-    <!-- scrolreveal -->
-<script src="https://unpkg.com/scrollreveal"></script>
 
 <!-- Custom java -->
-
 <script src="main.js"></script>
+
 
 <!-- JS BOOSTSTRAP -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

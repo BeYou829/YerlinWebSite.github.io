@@ -190,6 +190,11 @@ height: 180px;
     margin: 0px 0 10px 0;
 }
 
+.carousel-inner h5, p{
+
+    color: white;
+}
+
 
 
 /* Social */

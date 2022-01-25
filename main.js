@@ -1,9 +1,6 @@
-document.querySelector(".menu-btn").addEventListener("click", () => {
-    document.querySelector(".nav-menu").classList.toggle("show");
-  });
+window.sr = ScrollReveal();
 
-
-  ScrollReveal().reveal('.Showcase');
-ScrollReveal().reveal('.News-Cards', { delay: 500 });
-ScrollReveal().reveal('.Baner-numero-uno', { delay: 500 });
-ScrollReveal().reveal('.Baner-numero-dos', { delay: 500 });
+ScrollReveal().reveal('.navbar');
+ScrollReveal().reveal('.card', { delay: 500 });
+ScrollReveal().reveal('.carousel', { delay: 500 });
+ScrollReveal().reveal('.footer-links', { delay: 500 });
