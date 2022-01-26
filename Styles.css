@@ -82,11 +82,32 @@ margin: 100px 0;
 .nav-logo{
     width: 92px;
     border-radius: 50%;
-    margin-right: 50px;
+    margin-left: 500px;
+    
+}
+.tex{
+
+margin-left: 350px;
+
+    
+}
+
+.iconos{
+   margin: auto;
+}
+.telefono{
+
+    color: white;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+.con{
+
+    margin-top: 20px;
 }
 
 .footer-links{
-    background: pink;
+    background: #f2789f;
     color: white;
     font-size: 15px;
     padding: 20px 0;
@@ -99,9 +120,4 @@ margin: 100px 0;
     
 }
 
-.footer-links{
-    margin: 20px 0 0 ;   
-}
-.iconos{
-    margin: auto;
-}
+
