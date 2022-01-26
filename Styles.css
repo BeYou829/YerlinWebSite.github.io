@@ -37,6 +37,10 @@ ul{
 }
 
 /* Showcase */
+.card{
+
+    margin-top: 100px;
+}
 
 .card-img-overlay{
     padding: 20px;
@@ -45,7 +49,7 @@ ul{
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    border-radius: 5px;
+    border-radius: 5px; 
 }
 
 .btn{
